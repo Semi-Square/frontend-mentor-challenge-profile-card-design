@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+
+    background-image: url('assets/bg-pattern-top.svg'), url('assets/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51.5vw bottom 40vh, left 51vw top 48vh;
+}
+
+.top-pattern {
+    position: absolute;
+    /* height: 100%;
+    width: 100%; */
+    background-size: contain;
+    top: -25rem;
+    left: -4.5rem;
+}
+
+.bottom-pattern {
+    position: absolute;
+    /* height: 100%;
+    width: 100%; */
+    background-size: contain;
+    top: 28rem;
+    left: 60rem;
+}
+
+.container {
+    border-radius: 13px;
+    overflow: hidden;
+    min-width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.top {}
+
+.top img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.middle {
+    height: 160px;
+    background-color: white;
+    margin-top: -4px;
+    border-bottom: 0.3px solid hsl(0, 0%, 81%);
+
+    /* hsl(0, 0%, 59%) */
+}
+
+.bottom {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-1 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.row-2 {
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    margin-top: 5px;
+}
+
+.picture {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    border: 5px solid white;
+    position: absolute;
+    top: 80px;
+    left: 115px;
+}
+
+.name-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 102px;
+}
+
+.name {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.name span {
+    color: hsl(0, 0%, 59%);
+}
+
+.city {
+    color: hsl(0, 0%, 59%);
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 8px;
+}
